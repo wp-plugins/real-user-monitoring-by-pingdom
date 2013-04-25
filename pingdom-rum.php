@@ -70,10 +70,10 @@ function print_PingdomRUM_management() {
 <div id="message" class="updated fade"><p><strong><?php esc_attr_e('Options saved.'); ?></strong></p></div>
 <?php
     }
-wp_enqueue_style("pingdom-rum", plugin_dir_url("/", __FILE__) . "/pingdom-rum/pingdom.css");
+wp_enqueue_style("pingdom-rum", plugin_dir_url("/", __FILE__) . trim(dirname(plugin_basename(__FILE__)), '/') . "/pingdom.css");
 ?>
 <div class="wrap">
-    <img src="<?php echo plugin_dir_url("/", __FILE__); ?>pingdom-rum/img-pingdom-logo.png" alt="Pingdom logo" />
+    <img src="<?php echo plugin_dir_url("/", __FILE__) . trim(dirname(plugin_basename(__FILE__)), '/'); ?>/img-pingdom-logo.png" alt="Pingdom logo" />
     <h2><?php esc_attr_e('Real User Monitoring', 'pingdom-rum'); ?></h2>
     <p><?php _e('Please enter your Pingdom Real User Monitoring Site ID. If you do not yet have an account, go get one at <a href="https://www.pingdom.com/signup/">Pingdom.com</a>!', 'pingdom-rum'); ?></p>
     <p><?php _e('To get your ID, login at <a href="https://my.pingdom.com/">My Pingdom</a>, go to "RUM" and edit or create your check. In the JavaScript code, look for something like this:', 'pingdom-rum'); ?></p>
