@@ -57,13 +57,14 @@ function print_PingdomRUM_management() {
         if (empty($code)) {
             delete_option('pingdom_rum_code');
         } else {
-            if (!empty($cache) && $cache != $code) {
+            if ($cache != $code) {
                 update_option('pingdom_rum_code', $code);
-                // Clear WP-Super Cache
-                if (function_exists('wp_cache_clear_cache')) {
-                    wp_cache_clear_cache();
-                }
             }
+        }
+
+        // Clear WP-Super Cache on POST
+        if (function_exists('wp_cache_clear_cache')) {
+            wp_cache_clear_cache();
         }
 
 ?>
