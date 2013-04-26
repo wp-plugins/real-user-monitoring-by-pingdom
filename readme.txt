@@ -16,15 +16,23 @@ Once added, Pingdom immediately starts collecting data from your website's visit
 
 With Pingdom's Real User Monitoring you can know exactly how your visitors are experiencing you website's performance. It gives you invaluable insights into the website's load time. It also helps answer questions like how your website really perform from a specific country or web browser.
 
-Real User Monitoring is the only way to see how every single visitor is experiencing a website. It's paramount when you want to make improvments to your website's performance. 
+Real User Monitoring is the only way to see how every single visitor is experiencing a website. It's paramount when you want to make improvments to your website's performance.
 
-Please note that you need a Pingdom account for this plugin. If you don't have one, grab one free at <a href="https://www.pingdom.com/rum" title="Pingdom Real User Monitoring">pingdom.com</a> – it's super-easy!
+Please note that you need a Pingdom account for this plugin. If you don't have one, grab one free at <a href="https://www.pingdom.com/rum" title="Pingdom Real User Monitoring">pingdom.com</a> - it's super-easy!
 
 == Installation ==
 
-1.  Upload the full directory into your /wp-content/plugins directory
-2.  Activate the plugin from the 'Plugins' menu in WordPress
-3.  Enter your tracking code under the plugins menu
+** Option 1**
+
+1. From your WordPress administration interface, go to 'Plugins' > 'Add new'. Once there, search for "Pingdom" or "real user monitoring."
+2. Click 'Install Now' and follow the instructions.
+3. Now go to 'Plugins' > 'Pingdom Real User Monitoring'. There you will find further instructions for how to enable RUM on your WordPress site.
+
+** Option 2**
+
+1. Upload the full directory into your /wp-content/plugins directory
+2. Activate the 'Pingdom Real User Monitoring' plugin from the 'Plugins' menu in WordPress
+3. Now go to 'Plugins' > 'Pingdom Real User Monitoring'. There you will find further instructions for how to enable RUM on your WordPress site.
 
 == Frequently Asked Questions ==
 
@@ -41,7 +49,7 @@ Our JavaScript collects performance data using two main methods:
 
 **What makes Real User Monitoring different from Google Analytics?**
 
-Our Real User Monitoring (RUM) is much more focused on performance than Google Analytics, and many other sales/site usage oriented Web Analytics tools. This means that in RUM, you will see how your site performs, how the user experience is for your site and what is slowing your site down, while in Google Analytics you’ll see things like traffic sources and how users navigate around your site.
+Our Real User Monitoring (RUM) is much more focused on performance than Google Analytics, and many other sales/site usage oriented Web Analytics tools. This means that in RUM, you will see how your site performs, how the user experience is for your site and what is slowing your site down, while in Google Analytics you'll see things like traffic sources and how users navigate around your site.
 
 In other words, Real User Monitoring is the perfect complement to your other web analytics tools.
 
@@ -51,7 +59,7 @@ The JavaScript will download other scripts needed to gather your data asynchrono
 
 **Does this capture any type of PII (Personally Identifiable Information)?**
 
-No, we do not collect any PII-data and we don’t store IP-addresses (yes, we use the IP-address to determine which country the visitor is from, but it’s not stored). All data collected is merely that from the browser.
+No, we do not collect any PII-data and we don't store IP-addresses (yes, we use the IP-address to determine which country the visitor is from, but it's not stored). All data collected is merely that from the browser.
 
 == Screenshots ==
 
@@ -72,3 +80,4 @@ No, we do not collect any PII-data and we don’t store IP-addresses (yes, we us
 **1.0**
 
 *   This is the launch version.
+
