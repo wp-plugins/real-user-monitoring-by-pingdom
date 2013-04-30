@@ -1,10 +1,10 @@
 === Real User Monitoring by Pingdom ===
 
-Contributors: Pingdom, mliljedahl 
-Tags: pingdom, real user monitoring, web performance
+Contributors: Pingdom
+Tags: pingdom, real user monitoring, rum, web performance
 Requires at least: 2.1
 Tested up to: 3.6
-Stable tag: 1.0
+Stable tag: 1.0.1
 
 With Pingdom Real User Monitoring you'll see how your website performs, how your users experience it, and what slows it down.
 
@@ -18,7 +18,7 @@ With Pingdom's Real User Monitoring you can know exactly how your visitors are e
 
 Real User Monitoring is the only way to see how every single visitor is experiencing a website. It's paramount when you want to make improvments to your website's performance.
 
-Please note that you need a Pingdom account for this plugin. If you don't have one, grab one free at <a href="https://www.pingdom.com/rum" title="Pingdom Real User Monitoring">pingdom.com</a> - it's super-easy!
+Please note that you need a Pingdom account for this plugin. If you don't have one, grab one at <a href="https://www.pingdom.com/rum" title="Pingdom Real User Monitoring">pingdom.com</a> - it's super-easy!
 
 == Installation ==
 
