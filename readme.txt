@@ -22,13 +22,13 @@ Please note that you need a Pingdom account for this plugin. If you don't have o
 
 == Installation ==
 
-** Option 1**
+**Option 1**
 
 1. From your WordPress administration interface, go to 'Plugins' > 'Add new'. Once there, search for "Pingdom" or "real user monitoring."
 2. Click 'Install Now' and follow the instructions.
 3. Now go to 'Plugins' > 'Pingdom Real User Monitoring'. There you will find further instructions for how to enable RUM on your WordPress site.
 
-** Option 2**
+**Option 2**
 
 1. Upload the full directory into your /wp-content/plugins directory
 2. Activate the 'Pingdom Real User Monitoring' plugin from the 'Plugins' menu in WordPress
