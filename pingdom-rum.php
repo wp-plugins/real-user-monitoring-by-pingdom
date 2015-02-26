@@ -24,7 +24,7 @@ if (!function_exists('esc_attr_e')) {
 // The html code that goes in to the header
 function add_PingdomRUM_header() {
     $code = get_option('pingdom_rum_code');
-    
+
     if(!is_admin() && strlen($code) > 0) {
 ?>
 
@@ -53,7 +53,7 @@ function print_PingdomRUM_management() {
 
         $code = trim($_POST['pingdom_rum_code']);
         $cache = get_option('pingdom_rum_code');
-    
+
         if (empty($code)) {
             delete_option('pingdom_rum_code');
         } else {
@@ -93,14 +93,14 @@ wp_enqueue_style("pingdom-rum", plugin_dir_url("/", __FILE__) . trim(dirname(plu
 <?php
 }
 
-function add_PingdomRUM_admin_page() 
+function add_PingdomRUM_admin_page()
 {
     if ( function_exists('add_submenu_page') ) {
         add_submenu_page('plugins.php', __('Pingdom Real User Monitoring', 'pingdom-rum'), __('Pingdom Real User Monitoring'), 'manage_options', 'pingdom-rum-config', 'print_PingdomRUM_management');
     }
 }
 
-function add_PingdomRUM_action_links( $links ) 
+function add_PingdomRUM_action_links( $links )
 {
     return array_merge(array('settings' => '<a href="' . get_bloginfo( 'wpurl') . '/wp-admin/plugins.php?page=pingdom-rum-config">Settings</a>'), $links);
 }
@@ -108,7 +108,7 @@ function add_PingdomRUM_action_links( $links )
 add_action('wp_head', 'add_PingdomRUM_header');
 
 if(is_admin()) {
-    load_plugin_textdomain('pingdom-rum', 'wp-content/plugins/' . dirname(plugin_basename(__FILE__)) . '/i18n');
+    load_plugin_textdomain('pingdom-rum', false, dirname( plugin_basename( __FILE__ ) ) . '/i18n');
     add_action('admin_menu', 'add_PingdomRUM_admin_page');
     add_filter('plugin_action_links_' . plugin_basename( __FILE__ ), 'add_PingdomRUM_action_links');
 }
