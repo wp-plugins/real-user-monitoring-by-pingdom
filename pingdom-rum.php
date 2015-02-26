@@ -4,7 +4,7 @@ Plugin Name: Pingdom Real User Monitoring
 Plugin URI: https://www.pingdom.com/rum
 Description: A very simple and easy plugin that adds your Pingdom Real User Monitoring JavaScript code to the <head> tag of your WordPress blog. When activated you must <a href="plugins.php?page=pingdom-rum-config">enter your Pingdom Real User Monitoring site ID</a> under the Plugins menu for it to work. If you don’t already have an account, get one at <a href="https://www.pingdom.com/rum">pingdom.com</a>.
 Author: Pingdom AB
-Version: 1.0
+Version: 1.0.1
 Author URI: https://www.pingdom.com/
 */
 
@@ -24,7 +24,7 @@ if (!function_exists('esc_attr_e')) {
 // The html code that goes in to the header
 function add_PingdomRUM_header() {
     $code = get_option('pingdom_rum_code');
-    
+
     if(!is_admin() && strlen($code) > 0) {
 ?>
 
@@ -53,7 +53,7 @@ function print_PingdomRUM_management() {
 
         $code = trim($_POST['pingdom_rum_code']);
         $cache = get_option('pingdom_rum_code');
-    
+
         if (empty($code)) {
             delete_option('pingdom_rum_code');
         } else {
@@ -93,14 +93,14 @@ wp_enqueue_style("pingdom-rum", plugin_dir_url("/", __FILE__) . trim(dirname(plu
 <?php
 }
 
-function add_PingdomRUM_admin_page() 
+function add_PingdomRUM_admin_page()
 {
     if ( function_exists('add_submenu_page') ) {
         add_submenu_page('plugins.php', __('Pingdom Real User Monitoring', 'pingdom-rum'), __('Pingdom Real User Monitoring'), 'manage_options', 'pingdom-rum-config', 'print_PingdomRUM_management');
     }
 }
 
-function add_PingdomRUM_action_links( $links ) 
+function add_PingdomRUM_action_links( $links )
 {
     return array_merge(array('settings' => '<a href="' . get_bloginfo( 'wpurl') . '/wp-admin/plugins.php?page=pingdom-rum-config">Settings</a>'), $links);
 }
