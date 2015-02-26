@@ -4,7 +4,7 @@ Plugin Name: Pingdom Real User Monitoring
 Plugin URI: https://www.pingdom.com/rum
 Description: A very simple and easy plugin that adds your Pingdom Real User Monitoring JavaScript code to the <head> tag of your WordPress blog. When activated you must <a href="plugins.php?page=pingdom-rum-config">enter your Pingdom Real User Monitoring site ID</a> under the Plugins menu for it to work. If you don’t already have an account, get one at <a href="https://www.pingdom.com/rum">pingdom.com</a>.
 Author: Pingdom AB
-Version: 1.0
+Version: 1.0.2
 Author URI: https://www.pingdom.com/
 */
 
