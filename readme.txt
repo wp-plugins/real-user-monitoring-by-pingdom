@@ -3,7 +3,7 @@
 Contributors: Pingdom
 Tags: pingdom, real user monitoring, rum, web performance
 Requires at least: 2.1
-Tested up to: 3.6
+Tested up to: 3.8.1
 Stable tag: 1.0.2
 
 With Pingdom Real User Monitoring you'll see how your website performs, how your users experience it, and what slows it down.
